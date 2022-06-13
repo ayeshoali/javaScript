@@ -6,3 +6,9 @@ console.log(introduction.split(" "));
 
 
 //NEW STRING METHODS
+//REPEAT
+introduction.repeat(3);
+//STARTSWITH
+
+//ENDSWITH
+//INCLUDES

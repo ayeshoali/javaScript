@@ -12,6 +12,14 @@ function add(a, b, c) {
 }
 add(...num1);
 
+// REST
+
+let X = [1, 2, 3];
+let Y = [4, 5, X];
+let Z = [4, 5, 6, ...X];
+console.log(Y);
+console.log(Z);
+
 //TEMPLATE STRINGS
 
 let myString = `Hi, i'm Ayesha 
@@ -20,16 +28,44 @@ console.log(myString);
 
 //ENHANCED OBJECT LITERALS
 
-let speed = 60;
-let model = "Audi";
-let myCarr = {
-    speed,
-    model,
+// let speed = 60;
+// let model = "Audi";
+// let myCarr = {
+//     speed,
+//     model,
+//     drive() {
+//         console.log("i'm driving");
+//     },
+//     getSpeed() {
+//         console.log("my speed is " + this.speed);
+//     }
+// };
+// console.log(`${myCarr.drive()}`);
+
+
+//ARROW FUNCTIONS
+
+let myNewCar = {
+    speed: 60,
+    model: "audi",
     drive() {
         console.log("i'm driving");
     },
     getSpeed() {
-        console.log("my speed is " + this.speed);
+        speeD = () => {
+            console.log("my speed is " + this.speed);
+        };
+        speeD();
+
     }
 };
-console.log(`${myCarr.drive()}`);
+
+myNewCar.getSpeed();
+
+
+//SETS
+
+let mySet = new Set();
+mySet.add("ayesha", "ali", "farhan", "waris");
+mySet.size();
+mySet.has("ayesha");
