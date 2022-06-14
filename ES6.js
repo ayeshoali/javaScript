@@ -67,5 +67,5 @@ myNewCar.getSpeed();
 
 let mySet = new Set();
 mySet.add("ayesha", "ali", "farhan", "waris");
-mySet.size();
+mySet.size;
 mySet.has("ayesha");
